@@ -1,5 +1,5 @@
 *** Settings ***
-
+Library  SeleniumLibrary
 *** Variables ***
 
 *** Test Cases ***
@@ -16,5 +16,11 @@ Registration page testcase
 Dashboard testcase
     [documentation]  login for user
     log  down
+
+Google testcase
+    [documentation]  google test
+    Open Browser    https://www.google.com/  chrome
+    Close Browser
+
 *** Keywords ***
 

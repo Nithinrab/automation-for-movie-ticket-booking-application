@@ -1,49 +1,64 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<robot generator="Robot 5.0 (Python 3.10.2 on win32)" generated="20220406 17:25:18.925" rpa="false" schemaversion="3">
+<robot generator="Robot 5.0 (Python 3.10.2 on win32)" generated="20220406 18:01:37.014" rpa="false" schemaversion="3">
 <suite id="s1" name="Demo" source="C:\Users\Nithin\PycharmProjects\robotframework\tests\SampleApp\FunctionalTestSuite\Demo.robot">
 <test id="s1-t1" name="login page testcase" line="6">
 <kw name="Log" library="BuiltIn">
 <arg>hello</arg>
 <doc>Logs the given message with the given level.</doc>
-<msg timestamp="20220406 17:25:18.961" level="INFO">hello</msg>
-<status status="PASS" starttime="20220406 17:25:18.960" endtime="20220406 17:25:18.961"/>
+<msg timestamp="20220406 18:01:37.267" level="INFO">hello</msg>
+<status status="PASS" starttime="20220406 18:01:37.267" endtime="20220406 18:01:37.267"/>
 </kw>
 <doc>login for user</doc>
 <tag>user</tag>
-<status status="PASS" starttime="20220406 17:25:18.959" endtime="20220406 17:25:18.961"/>
+<status status="PASS" starttime="20220406 18:01:37.253" endtime="20220406 18:01:37.275"/>
 </test>
 <test id="s1-t2" name="Registration page testcase" line="11">
 <kw name="Log" library="BuiltIn">
 <arg>welcome</arg>
 <doc>Logs the given message with the given level.</doc>
-<msg timestamp="20220406 17:25:18.964" level="INFO">welcome</msg>
-<status status="PASS" starttime="20220406 17:25:18.964" endtime="20220406 17:25:18.965"/>
+<msg timestamp="20220406 18:01:37.297" level="INFO">welcome</msg>
+<status status="PASS" starttime="20220406 18:01:37.296" endtime="20220406 18:01:37.297"/>
 </kw>
 <doc>login for user</doc>
 <tag>user</tag>
-<status status="PASS" starttime="20220406 17:25:18.963" endtime="20220406 17:25:18.965"/>
+<status status="PASS" starttime="20220406 18:01:37.294" endtime="20220406 18:01:37.298"/>
 </test>
 <test id="s1-t3" name="Dashboard testcase" line="16">
 <kw name="Log" library="BuiltIn">
 <arg>down</arg>
 <doc>Logs the given message with the given level.</doc>
-<msg timestamp="20220406 17:25:18.972" level="INFO">down</msg>
-<status status="PASS" starttime="20220406 17:25:18.971" endtime="20220406 17:25:18.972"/>
+<msg timestamp="20220406 18:01:37.305" level="INFO">down</msg>
+<status status="PASS" starttime="20220406 18:01:37.305" endtime="20220406 18:01:37.305"/>
 </kw>
 <doc>login for user</doc>
-<status status="PASS" starttime="20220406 17:25:18.970" endtime="20220406 17:25:18.972"/>
+<status status="PASS" starttime="20220406 18:01:37.304" endtime="20220406 18:01:37.306"/>
 </test>
-<status status="PASS" starttime="20220406 17:25:18.928" endtime="20220406 17:25:18.974"/>
+<test id="s1-t4" name="Google testcase" line="20">
+<kw name="Open Browser" library="SeleniumLibrary">
+<arg>https://www.google.com/</arg>
+<arg>chrome</arg>
+<doc>Opens a new browser instance to the optional ``url``.</doc>
+<msg timestamp="20220406 18:01:37.311" level="INFO">Opening browser 'chrome' to base url 'https://www.google.com/'.</msg>
+<status status="PASS" starttime="20220406 18:01:37.311" endtime="20220406 18:01:42.057"/>
+</kw>
+<kw name="Close Browser" library="SeleniumLibrary">
+<doc>Closes the current browser.</doc>
+<status status="PASS" starttime="20220406 18:01:42.061" endtime="20220406 18:01:44.264"/>
+</kw>
+<doc>google test</doc>
+<status status="PASS" starttime="20220406 18:01:37.310" endtime="20220406 18:01:44.265"/>
+</test>
+<status status="PASS" starttime="20220406 18:01:37.016" endtime="20220406 18:01:44.267"/>
 </suite>
 <statistics>
 <total>
-<stat pass="3" fail="0" skip="0">All Tests</stat>
+<stat pass="4" fail="0" skip="0">All Tests</stat>
 </total>
 <tag>
 <stat pass="2" fail="0" skip="0">user</stat>
 </tag>
 <suite>
-<stat pass="3" fail="0" skip="0" id="s1" name="Demo">Demo</stat>
+<stat pass="4" fail="0" skip="0" id="s1" name="Demo">Demo</stat>
 </suite>
 </statistics>
 <errors>
