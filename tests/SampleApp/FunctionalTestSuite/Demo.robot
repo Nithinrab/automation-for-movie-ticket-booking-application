@@ -23,9 +23,10 @@ Dashboard testcase
 Google testcase
     [documentation]  google test
     Open Browser  ${url}  chrome
-    Input Text  name:q  ${search_parameter}
+    search data
     Submit form
     Close Browser
 
 *** Keywords ***
-
+search data
+    Input Text  name:q  ${search_parameter}
